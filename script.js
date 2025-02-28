@@ -67,3 +67,4 @@ function changeWord() {
 
 // Change word every 1 seconds
 setInterval(changeWord, 1000);
+
