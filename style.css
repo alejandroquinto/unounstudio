@@ -695,3 +695,33 @@ button {
         display: none !important; /* Hide the landing section on mobile */
     }
 }
+
+.thank-you-container {
+    text-align: center;
+    margin-top: 50px;
+    font-family: Arial, sans-serif;
+}
+
+.thank-you-container h2 {
+    color: #004e41;
+    font-size: 24px;
+}
+
+.thank-you-container p {
+    font-size: 18px;
+    color: #555;
+}
+
+.thank-you-container a {
+    display: inline-block;
+    margin-top: 20px;
+    text-decoration: none;
+    background-color: #004e41;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.thank-you-container a:hover {
+    background-color: #00392f;
+}
