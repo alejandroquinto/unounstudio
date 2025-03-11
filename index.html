@@ -6,7 +6,6 @@
         </div>
         <nav class="nav">
             <ul>
-                <li><a href="#work">Work</a></li>
                 <li><a href="#services">Services</a></li>
                 <li><a href="#about">About Us</a></li>
             </ul>
@@ -17,7 +16,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Unoun Studio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <style>
         .image-gallery {
@@ -44,20 +43,19 @@
         </div>
 </div>
 
- <!-- Items Below Logo -->
- <div class="items-section">
+<!-- Items Below Logo -->
+<div class="items-section">
     <ul class="items">
-        <li>Urban Analytics</li>
+        <li><a href="urban-analytics.html">Urban Analytics</a></li>
         <span class="separator">•</span>
-        <li>Web Mapping</li>
+        <li><a href="web-mapping.html">Web Mapping</a></li>
         <span class="separator">•</span>
-        <li>Data Visualization</li>
-        <span class="separator">•</span>
-        <li>Architecture and Design</li>
+        <li><a href="architecture.html">Architecture and Design</a></li>
     </ul>
 </div>
 
-<section class="hero-section">
+
+<section id="hero" class="hero-section">
     <div class="overlay"></div>
     <div class="hero-container">
         <h1>We bring ideas to life through design and visualization.</h1>
@@ -65,28 +63,39 @@
     </div>
 </section>
 
+<section class="services">
+    <a href="urban-analytics.html" class="service-card">
+        <h3>URBAN ANALYTICS & DATA VIZ</h3>
+        <ul>
+            <li>Data Analysis</li>
+            <li>GIS</li>
+            <li>Geomarketing</li>
+            <li>Market Research</li>
+        </ul>
+    </a>
 
-<body>
-    <section id="services" class="services">
-        <div class="container">
-            <div class="service-card">
-                <h3>URBAN ANALYTICS</h3>
-                <p>Leverage data-driven insights to enhance urban planning, optimize infrastructure, and improve city livability through spatial intelligence.</p>
-            </div>
-            <div class="service-card">
-                <h3>WEB MAPPING</h3>
-                <p>Create interactive and visually compelling web maps that bring geographic data to life for smarter decision-making and engagement.</p>
-            </div>
-            <div class="service-card">
-                <h3>DATA VIZ</h3>
-                <p>Transform complex datasets into intuitive, impactful visuals that reveal trends, patterns, and insights for informed decision-making.</p>
-            </div>
-            <div class="service-card">
-                <h3>ARCHITECTURE</h3>
-                <p>Blend creativity with functionality to design sustainable, visually stunning spaces that enhance communities and urban landscapes.</p>
-            </div>
-        </div>
-    </section>
+    <a href="web-mapping.html" class="service-card">
+        <h3>WEB MAPPING</h3>
+        <ul>
+            <li>GIS Interactive Mapping</li>
+            <li>UX Design</li>
+            <li>Custom GIS Integrations</li>
+            <li>Real-time data visualisation</li>
+        </ul>
+    </a>
+
+    <a href="architecture.html" class="service-card">
+        <h3>ARCHITECTURE & DESIGN</h3>
+        <ul>
+            <li>Rendering</li>
+            <li>3D Model</li>
+            <li>Design Layouts</li>
+            <li>Interior Design</li>
+        </ul>
+    </a>
+    
+</section>
+
 
 
 <!-- Horizontal Scrolling Circles -->
@@ -121,7 +130,7 @@
         </svg>
     </div>
 
-    <section class="contact-form">
+    <section id="contact-form" class="contact-form">
         <h2>HOLA...</h2>
         <p>We love to hear more from you!</p>
     

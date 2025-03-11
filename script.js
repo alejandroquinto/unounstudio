@@ -68,3 +68,30 @@ function changeWord() {
 // Change word every 1 seconds
 setInterval(changeWord, 1000);
 
+// Array of images for the background
+const heroImages = [
+    "assets/background1.jpg",
+    "assets/background2.jpg",
+    "assets/background3.jpg",
+    "assets/background4.jpg"
+];
+
+let currentImageIndex = 0;
+const heroSection = document.querySelector(".hero-section");
+let slideDirection = true; // true = slide left, false = slide right
+
+function changeHeroBackground() {
+    heroSection.classList.add(slideDirection ? "slide-left" : "slide-right"); // Start sliding
+
+    setTimeout(() => {
+        currentImageIndex = (currentImageIndex + 1) % heroImages.length;
+        heroSection.style.backgroundImage = `url('${heroImages[currentImageIndex]}')`;
+
+        // Reset slide effect
+        heroSection.classList.remove("slide-left", "slide-right");
+        slideDirection = !slideDirection; // Toggle direction
+    }, 1500); // Matches the slide duration in CSS
+}
+
+// Change image every 5 seconds
+setInterval(changeHeroBackground, 5000);
