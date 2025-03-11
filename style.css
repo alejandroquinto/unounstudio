@@ -783,7 +783,7 @@ button {
     gap: 20px;
     justify-content: center;
     flex-wrap: wrap;
-    padding: 100px;
+    padding: 50px;
 }
 
 .service-card {
@@ -875,4 +875,49 @@ button {
 .image-container:hover::after {
     opacity: 1;
     transform: translateY(0); /* Moves text up smoothly */
+}
+
+/* Adjust Service Cards for Mobile Screens */
+@media screen and (max-width: 768px) {
+    .service-card {
+        width: 95%; /* Make the cards take most of the screen */
+        max-width: 400px; /* Prevents them from getting too large */
+        padding: 20px;
+        font-size: 16px; /* Adjusts text size for readability */
+        margin: 5px auto; /* Centers the cards */
+        text-align: center;
+    }
+
+    .service-card ul {
+        text-align: left; /* Align bullet points properly */
+        padding-left: 10px;
+    }
+
+    .service-card li {
+        margin-bottom: 5px; /* Add spacing between bullet points */
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .gallery {
+        display: grid;
+        grid-template-columns: 1fr; /* Show one image per row */
+        gap: 10px; /* Reduce space between images */
+        padding: 10px;
+        justify-items: center; /* Center images horizontally */
+    }
+
+    .image-container {
+        width: 100%; /* Ensures images use full width */
+        max-width: 90vw; /* Limits max width to avoid excessive stretching */
+    }
+
+    .image-container img {
+        width: 100%; /* Makes images take full width of their container */
+        height: auto; /* Maintains aspect ratio */
+        max-height: 500px; /* Prevents images from being too tall */
+        object-fit: cover; /* Ensures images fill the space properly */
+        border-radius: 8px; /* Keeps smooth edges */
+        display: block; /* Prevents inline display issues */
+    }
 }
