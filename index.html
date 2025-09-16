@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <title>Unoun Studio — Data · Maps · Design</title>
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css"/>
@@ -10,20 +10,37 @@
 </head>
 <body class="lux"><!-- default to luxe/dark -->
 
-<header class="header">
+<header class="header" id="top">
   <a class="brand" href="index.html" aria-label="Unoun Studio">
     <img src="assets/logo.png" alt="Unoun Studio logo">
   </a>
   <div class="header-actions">
-    <button class="theme-toggle" aria-label="Toggle theme">◐</button>
-    <button class="menu-toggle" aria-label="Open menu"><span></span><span></span><span></span></button>
+    <button class="theme-toggle" aria-label="Toggle theme" title="Toggle theme">◐</button>
+    <button class="menu-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="site-nav">
+      <span></span><span></span><span></span>
+    </button>
   </div>
-  <nav class="nav" role="navigation">
+
+  <nav class="nav" id="site-nav" role="navigation">
     <ul>
       <li><a href="#intro">Intro</a></li>
       <li><a href="#capabilities">Capabilities</a></li>
       <li><a href="#work">Work</a></li>
-      <li><a href="#apps">Apps</a></li>
+
+      <!-- Apps dropdown -->
+      <li class="has-sub">
+        <button class="sub-toggle" aria-expanded="false">
+          Apps <span class="caret">▾</span>
+        </button>
+        <ul class="submenu">
+          <li><a href="#apps">All applications</a></li>
+          <li><a href="https://alejandroquinto.github.io/draw-your-city/" target="_blank" rel="noopener">Draw Your City</a></li>
+          <li><a href="https://alejandroquinto.github.io/riesgo_inundacion/" target="_blank" rel="noopener">Flood Risk Explorer</a></li>
+          <!-- Duplicate the next line to add more apps -->
+          <!-- <li><a href="https://your-app-url" target="_blank" rel="noopener">Your App Name</a></li> -->
+        </ul>
+      </li>
+
       <li><a href="#contact">Contact</a></li>
     </ul>
   </nav>
@@ -32,10 +49,10 @@
 <!-- HERO -->
 <section id="intro" class="hero hero--fixed hero--intro">
   <div class="hero-inner">
-    <p class="studio-tag">(Unoun Studio)</p>
+    <p class="studio-tag">(Unoun Studio — Spain / Remote)</p>
     <h1>Designing clarity in <span class="brand-underline">data, maps & space</span>.</h1>
   </div>
-  <div class="meta-bar">
+  <div class="meta-bar" aria-hidden="true">
     <div class="meta-left">DATA · MAPS · DESIGN</div>
     <div class="meta-center">We create visual systems that make complex ideas simple.</div>
     <div class="meta-right">Scroll</div>
@@ -43,7 +60,7 @@
 </section>
 
 <!-- ABOUT -->
-<section class="about">
+<section class="about" id="about">
   <div class="about-intro">
     We’re a small senior studio. We work where analytics meets design:
     <em>urban data</em>, <em>web mapping</em> and <em>architecture</em> — plus brand & digital design when your story needs a face.
@@ -55,12 +72,12 @@
       and design simple interfaces and visuals people actually understand.
       Used by teams for pitches, policy and public-facing work.
       <br><br>
-      <a class="link" href="mailto:info@unounstudio.com?subject=Project%20Inquiry">Email us →</a>
+      <a class="link" href="mailto:info@unounstudio.com?subject=Project%20Inquiry">info@unounstudio.com</a>
     </div>
   </div>
 </section>
 
-<!-- CAPABILITIES — DEVICE CARDS (inline text tags) -->
+<!-- CAPABILITIES — DEVICE CARDS -->
 <section id="capabilities" class="section capabilities">
   <div class="section-head">
     <h2>What we do</h2>
@@ -148,7 +165,10 @@
     <h2>Applications</h2>
     <p>Small tools and experiments we build and share.</p>
   </div>
+
   <section class="editorial-grid">
+
+    <!-- App 1 -->
     <article class="editorial-card">
       <a class="editorial-thumb" href="https://alejandroquinto.github.io/draw-your-city/" target="_blank" rel="noopener">
         <img src="assets/application01.jpg" alt="Draw Your City app">
@@ -159,6 +179,43 @@
         <p>Create printable city posters from map data. Pick a place, customise, export.</p>
       </div>
     </article>
+
+    <!-- App 2 (new) -->
+    <article class="editorial-card">
+      <a class="editorial-thumb" href="https://alejandroquinto.github.io/riesgo_inundacion/" target="_blank" rel="noopener">
+        <img src="assets/application02.jpg" alt="Flood Risk Explorer app">
+      </a>
+      <div class="editorial-meta">
+        <span class="eyebrow">WEB APP</span>
+        <h4><a href="https://alejandroquinto.github.io/riesgo_inundacion/" target="_blank" rel="noopener">Flood Risk Explorer</a></h4>
+        <p>Visualise potential flood exposure by location with simple, intuitive overlays.</p>
+      </div>
+    </article>
+
+    <article class="editorial-card">
+      <a class="editorial-thumb" href="https://alejandroquinto.github.io/world_lakes/" target="_blank" rel="noopener">
+        <img src="assets/application03.jpg" alt="World Lakes">
+      </a>
+      <div class="editorial-meta">
+        <span class="eyebrow">WEB APP</span>
+        <h4><a href="https://alejandroquinto.github.io/world_lakes/" target="_blank" rel="noopener">Lakes of the World</a></h4>
+        <p>Explore the lakes of the World.</p>
+      </div>
+    </article>
+
+        <article class="editorial-card">
+      <a class="editorial-thumb" href="https://alejandroquinto.github.io/building-age/index.html" target="_blank" rel="noopener">
+        <img src="assets/application04.jpg" alt="World Lakes">
+      </a>
+      <div class="editorial-meta">
+        <span class="eyebrow">WEB APP</span>
+        <h4><a href="https://alejandroquinto.github.io/building-age/index.html" target="_blank" rel="noopener">Building age visualisation</a></h4>
+        <p>Discover spanish cities urban footprint development.</p>
+      </div>
+    </article>
+
+ 
+
   </section>
 </section>
 
@@ -178,11 +235,6 @@
   <div class="footer-inner">
     <img src="assets/logo.png" alt="Unoun Studio" class="footer-logo">
     <p>© 2025 Unoun Studio · Spain</p>
-    <div class="social">
-      <a href="#" aria-label="LinkedIn">LinkedIn</a>
-      <a href="#" aria-label="Instagram">Instagram</a>
-      <a href="#" aria-label="Behance">Behance</a>
-    </div>
   </div>
 </footer>
 
