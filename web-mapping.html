@@ -1,48 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Urban Analytics</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Web Mapping — Unoun Studio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css"/>
 </head>
-<body>
+<body class="lux">
+<header class="header">
+  <a class="brand" href="index.html"><img src="assets/logo.png" alt="Unoun Studio"></a>
+  <div class="header-actions">
+    <button class="theme-toggle" aria-label="Toggle theme">◐</button>
+    <button class="menu-toggle" aria-label="Open menu"><span></span><span></span><span></span></button>
+  </div>
+  <nav class="nav">
+    <ul>
+      <li><a href="index.html#capabilities">Capabilities</a></li>
+      <li><a href="index.html#work">Work</a></li>
+      <li><a href="index.html#apps">Apps</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
 
-    <!-- HEADER -->
-    <header class="header">
-        <div class="logo">
-            <a href="index.html"><img src="assets/logo.png" alt="Unoun Studio Logo"></a>
-        </div>
-        <nav class="nav">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="mailto:info@unounstudio.com?subject=Project%20Inquiry">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+<main class="page">
+  <section class="page-hero soft-grid">
+    <h1>Web Mapping</h1>
+    <p class="lede">High-performance, accessible geospatial applications for the web.</p>
+  </section>
 
-    <!-- Main Section -->
-    <main class="urban-gallery">
-        <h1>Urban Analytics</h1>
-    
-        <section class="gallery">
-            <div class="image-container" data-text="Application using AirBnB data.">
-                <img src="assets/web-mapping-1.jpg" alt="Web Mapping Image 1">
-            </div>
-            <div class="image-container" data-text="Web global map using population data">
-                <img src="assets/web-mapping-2.jpg" alt="Web Mapping Image 2">
-            </div>
-            <div class="image-container" data-text="Barcelona urban data mapping, 15 Minute City">
-                <img src="assets/web-mapping-3.gif" alt="Urban Analytics Image 3">
-            </div>
-        </section>
-    </main>
-    
+  <section class="editorial-grid">
+    <article class="editorial-card">
+      <a class="editorial-thumb" href="#"><img src="assets/web-mapping-1.jpg" alt=""></a>
+      <div class="editorial-meta"><h4><a href="#">Airbnb Data Explorer</a></h4><p>Multi-source overlays with price and density.</p></div>
+    </article>
 
-    <!-- FOOTER -->
-    <footer class="footer">
-        <p>© 2025 Unoun Studio. All Rights Reserved.</p>
-    </footer>
+    <article class="editorial-card">
+      <a class="editorial-thumb" href="#"><img src="assets/web-mapping-2.jpg" alt=""></a>
+      <div class="editorial-meta"><h4><a href="#">Global Population</a></h4><p>Tiled raster + vector for performance.</p></div>
+    </article>
 
+    <article class="editorial-card">
+      <a class="editorial-thumb" href="#"><img src="assets/web-mapping-3.gif" alt=""></a>
+      <div class="editorial-meta"><h4><a href="#">15-Minute City — Barcelona</a></h4><p>Walkshed metrics with neighbourhood overlays.</p></div>
+    </article>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <img src="assets/logo.png" class="footer-logo" alt="">
+    <p>© 2025 Unoun Studio</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>

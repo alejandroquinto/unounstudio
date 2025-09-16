@@ -1,63 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Urban Analytics</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Urban Analytics — Unoun Studio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css"/>
 </head>
-<body>
+<body class="lux">
+<header class="header">
+  <a class="brand" href="index.html"><img src="assets/logo.png" alt="Unoun Studio"></a>
+  <div class="header-actions">
+    <button class="theme-toggle" aria-label="Toggle theme">◐</button>
+    <button class="menu-toggle" aria-label="Open menu"><span></span><span></span><span></span></button>
+  </div>
+  <nav class="nav">
+    <ul>
+      <li><a href="index.html#capabilities">Capabilities</a></li>
+      <li><a href="index.html#work">Work</a></li>
+      <li><a href="index.html#apps">Apps</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
 
-    <!-- HEADER -->
-    <header class="header">
-        <div class="logo">
-            <a href="index.html"><img src="assets/logo.png" alt="Unoun Studio Logo"></a>
-        </div>
-        <nav class="nav">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="mailto:info@unounstudio.com?subject=Project%20Inquiry">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+<main class="page">
+  <section class="page-hero soft-grid">
+    <h1>Urban Analytics</h1>
+    <p class="lede">We turn raw datasets into spatial narratives for decisions and public discourse.</p>
+  </section>
 
-    <!-- Main Section -->
-    <main class="urban-gallery">
-        <h1>Urban Analytics</h1>
-    
-        <section class="gallery">
-            <div class="image-container" data-text="Average Rent Mapping of Gandia, Valencia.">
-                <img src="assets/urban-analytics-1.jpg" alt="Urban Analytics Image 1">
-            </div>
-            <div class="image-container" data-text="Research on number of swimming pools using cadastral data, Spain.">
-                <img src="assets/urban-analytics-2.jpg" alt="Urban Analytics Image 2">
-            </div>
-            <div class="image-container" data-text="Mapping prototype of Barcelona, Spain.">
-                <img src="assets/urban-analytics-3.jpg" alt="Urban Analytics Image 3">
-            </div>
-            <div class="image-container" data-text="Map of Barcelona using age building data.">
-                <img src="assets/urban-analytics-4.jpg" alt="Urban Analytics Image 4">
-            </div>
-            <div class="image-container" data-text="Research project in Ogoni, Nigeria.">
-                <img src="assets/urban-analytics-5.jpg" alt="Urban Analytics Image 4">
-            </div>
-            <div class="image-container" data-text="Visualising air quality data in Barcelona, Spain.">
-                <img src="assets/urban-analytics-6.jpg" alt="Urban Analytics Image 4">
-            </div>
-              <div class="image-container" data-text="Marikina Population Density & Services">
-                <img src="assets/urban-analytics-7.jpg" alt="Urban Analytics Image 7">
-            </div>
-              <div class="image-container" data-text="Pedestrian and vehicle accidents in New York, simulation">
-                <img src="assets/urban-analytics-8.gif" alt="Urban Analytics Image 8">
-            </div>           
-        </section>
-    </main>
-    
+  <section class="editorial-grid">
+    <article class="editorial-card">
+      <a class="editorial-thumb" href="#"><img src="assets/urban-analytics-6.jpg" alt=""></a>
+      <div class="editorial-meta"><h4><a href="#">Air Quality — Barcelona</a></h4><p>PM2.5 / NO₂ levels at a glance.</p></div>
+    </article>
 
-    <!-- FOOTER -->
-    <footer class="footer">
-        <p>© 2025 Unoun Studio. All Rights Reserved.</p>
-    </footer>
+    <article class="editorial-card">
+      <a class="editorial-thumb" href="#"><img src="assets/urban-analytics-7.jpg" alt=""></a>
+      <div class="editorial-meta"><h4><a href="#">Population & Services — Marikina</a></h4><p>Accessibility lens to align resources.</p></div>
+    </article>
 
+    <article class="editorial-card">
+      <a class="editorial-thumb" href="#"><img src="assets/urban-analytics-1.jpg" alt=""></a>
+      <div class="editorial-meta"><h4><a href="#">Average Rent — Gandia</a></h4><p>Affordability patterns across neighbourhoods.</p></div>
+    </article>
+
+    <article class="editorial-card">
+      <a class="editorial-thumb" href="#"><img src="assets/urban-analytics-8.gif" alt=""></a>
+      <div class="editorial-meta"><h4><a href="#">Accidents — NYC</a></h4><p>Temporal simulations to surface risk.</p></div>
+    </article>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <img src="assets/logo.png" class="footer-logo" alt="">
+    <p>© 2025 Unoun Studio</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
